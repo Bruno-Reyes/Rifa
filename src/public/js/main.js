@@ -65,7 +65,7 @@ const enviarBoleto = (name,letter,number) => {
         document.getElementById('name').value = ""
         document.getElementById('letter').value = ""
         document.getElementById('number').value = ""
-        llenarTablero()
+        location.reload()
       })
       .catch(error => {
             console.log(error)
