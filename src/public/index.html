@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Rifa</title>
+    <script src="/js/validator.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="grid">
+        <div class="ghost"></div>
+        <div class="numbers">1</div>
+        <div class="numbers">2</div>
+        <div class="numbers">3</div>
+        <div class="numbers">4</div>
+        <div class="numbers">5</div>
+        <div class="numbers">6</div>
+        <div class="numbers">7</div>
+        <div class="numbers">8</div>
+        <div class="numbers">9</div>
+        <div class="numbers">10</div>
+        <div class="letters">A</div>
+        <div id="A1"></div>
+        <div id="A2"></div>
+        <div id="A3"></div>
+        <div id="A4"></div>
+        <div id="A5"></div>
+        <div id="A6"></div>
+        <div id="A7"></div>
+        <div id="A8"></div>
+        <div id="A9"></div>
+        <div id="A10"></div>
+        <div class="letters">B</div>
+        <div id="B1"></div>
+        <div id="B2"></div>
+        <div id="B3"></div>
+        <div id="B4"></div>
+        <div id="B5"></div>
+        <div id="B6"></div>
+        <div id="B7"></div>
+        <div id="B8"></div>
+        <div id="B9"></div>
+        <div id="B10"></div>
+        <div class="letters">C</div>
+        <div id="C1"></div>
+        <div id="C2"></div>
+        <div id="C3"></div>
+        <div id="C4"></div>
+        <div id="C5"></div>
+        <div id="C6"></div>
+        <div id="C7"></div>
+        <div id="C8"></div>
+        <div id="C9"></div>
+        <div id="C10"></div>
+        <div class="letters">D</div>
+        <div id="D1"></div>
+        <div id="D2"></div>
+        <div id="D3"></div>
+        <div id="D4"></div>
+        <div id="D5"></div>
+        <div id="D6"></div>
+        <div id="D7"></div>
+        <div id="D8"></div>
+        <div id="D9"></div>
+        <div id="D10"></div>
+        <div class="letters">E</div>
+        <div id="E1"></div>
+        <div id="E2"></div>
+        <div id="E3"></div>
+        <div id="E4"></div>
+        <div id="E5"></div>
+        <div id="E6"></div>
+        <div id="E7"></div>
+        <div id="E8"></div>
+        <div id="E9"></div>
+        <div id="E10"></div>
+    </div>
+
+        <div class="row mt-4">
+          <div class="col-sm"></div>
+          <div class="col-sm">
+                <form autocomplete="off">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="name">Nombre del participante: </label>
+                                <input type="text" class="form-control" id="name">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="letter">Letra</label>
+                                <select id="letter" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option value="A">A</option>
+                                  <option value="B">B</option>
+                                  <option value="C">C</option>
+                                  <option value="D">D</option>
+                                  <option value="E">E</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="numero">Numero: </label>
+                                <input type="number" class="form-control" id="number">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <button onclick="boleto()" class="btn btn-success btn-block">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <a href="tickets.html" class="btn btn-info btn-block">Lista de boletos</a>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+
+          <div class="col-sm"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

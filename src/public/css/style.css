@@ -1,0 +1,22 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+}
+
+.grid div{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.grid .ghost{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.grid .numbers{
+    background-color: #8563D6;
+}
+
+.grid .letters{
+    background-color: #CF4BFA;
+}
